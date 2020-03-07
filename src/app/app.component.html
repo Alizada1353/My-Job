@@ -1,7 +1,24 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <h4 mat-display-2 >Here Is More To Explore</h4>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button mat-raised-button color="primary" >I want to work</button>
+    <div class="moreLinks" *ngIf="showFiller">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4 mat-display-4>Here Is More To Explore</h4>
+      <br>
+      <br>
+      <ul>
+        <li>
+          <a> I give work</a>
+          <a>I want to an account</a>
+          <a>I have an account</a>
+          <a>I want to play around</a>
+          <a> <img class="icon" src="../assets/help.svg" alt="help"> I need help</a>
+        </li>
+      </ul>
+    </div>
     <button mat-icon-button class="sideNavList-toggler-btn" color="warn" (click)="showFiller = !showFiller">
       <mat-icon>add</mat-icon>
     </button>
@@ -9,5 +26,9 @@
 
   <div class="sideNav-toggler-btn">
     <button mat-mini-fab color="primary" (click)="drawer.toggle()"><mat-icon>add</mat-icon></button>
+  </div>
+  <div class="cloud-container container-fluid">
+    <img id="color-cloud" src="../assets/color-cloud.png" alt="colorful cloud">
+    <img id="worker" src="../assets/worker.png" alt="a team of workers">
   </div>
 </mat-drawer-container>
