@@ -1,41 +1,48 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <div class="moreLinks" >
-      <img id="sm-cloud" src="../assets/sm-cloud.svg" alt="cloud image">
-      <br>
+    <div class="moreLinks">
+      <img id="sm-cloud" src="../assets/sm-cloud.svg" alt="cloud image" />
+      <br />
       <h4 mat-display-4>All in One Cloud</h4>
-      <br>
+      <br />
       <ul>
         <li>
-          <img class="icon" src="../assets/recruitment.png" alt="recruitment">
-          <a> I am a recruiter</a>
+          <img class="icon" src="../assets/recruitment.png" alt="recruitment" />
+          <a>Recruiters class</a>
         </li>
         <li>
-          <img class="icon" src="../assets/magnifier.svg" alt="help">
-          <a>I am a job seeker</a>
+          <img class="icon" src="../assets/magnifier.svg" alt="help" />
+          <a>Job seekers class</a>
         </li>
         <li>
-          <img class="icon" src="../assets/magnifier.svg" alt="help">
-          <a>I want to play around</a>
+          <img class="icon" src="../assets/magnifier.svg" alt="help" />
+          <a>Visitors class</a>
         </li>
         <li>
-          <img class="icon" src="../assets/profile.svg" alt="help">
-          <a>I already have an acount</a>
+          <img class="icon" src="../assets/profile.svg" alt="help" />
+          <a>Login</a>
         </li>
         <li>
-          <img class="icon" src="../assets/help.svg" alt="help">
-          <a> I need help</a>
+          <img class="icon" src="../assets/help.svg" alt="help" />
+          <a>Help</a>
         </li>
       </ul>
     </div>
   </mat-drawer>
-  
+
   <div class="sideNav-toggler-btn">
-    <button mat-mini-fab id="btn-nav" (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+    <button mat-mini-fab id="btn-nav" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
     <!-- <button mat-mini-fab color="info" ><mat-icon>add</mat-icon></button> -->
   </div>
   <div class="cloud-container container-fluid">
-    <img id="color-cloud" src="../assets/sm-cloud.svg" alt="colorful cloud">
-    <img id="worker" src="../assets/worker.png" class="img-fluid" alt="a team of workers">
+    <img id="color-cloud" src="../assets/sm-cloud.svg" alt="colorful cloud" />
+    <img
+      id="worker"
+      src="../assets/worker.png"
+      class="img-fluid"
+      alt="a team of workers"
+    />
   </div>
 </mat-drawer-container>
