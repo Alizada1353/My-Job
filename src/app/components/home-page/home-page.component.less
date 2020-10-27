@@ -33,10 +33,14 @@ h4 {
   // font-family: 'Great Vibes', cursive;
 }
 .cloud-container {
-  height: 65vh;
+  height: 85vh;
   width: 50vw;
   margin: auto;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 
   #color-cloud {
     height: auto;
@@ -59,16 +63,23 @@ ul {
     padding: 4px 8px;
     display: flex;
     align-items: center;
+    list-style: none;
+
     a {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       position: relative;
       color: #2d6fc7;
+      text-decoration: none;
     }
     a:active {
       color: rgb(129, 7, 13);
+      text-decoration: none;
     }
     a:hover {
-      color: rgb(39, 40, 46);
+      color: #2d6fc7;
+      background-color: rgb(231, 230, 230);
+      padding: 8px 12px;
+      border-radius: 6px;
     }
     .icon {
       height: 18px;
