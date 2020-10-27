@@ -1,0 +1,48 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <div class="moreLinks">
+      <img id="sm-cloud" src="../assets/sm-cloud.svg" alt="cloud image" />
+      <br />
+      <h4 mat-display-4>All in One Cloud</h4>
+      <br />
+      <ul>
+        <li>
+          <img class="icon" src="../assets/recruitment.png" alt="recruitment" />
+          <a routerLink="/employers-class">Recruiters</a>
+        </li>
+        <li>
+          <img class="icon" src="../assets/magnifier.svg" alt="help" />
+          <a routerLink="/job-seekers_class">Job seekers</a>
+        </li>
+        <li>
+          <img class="icon" src="../assets/magnifier.svg" alt="help" />
+          <a routerLink="/visitors_class">Visitors</a>
+        </li>
+        <li>
+          <img class="icon" src="../assets/profile.svg" alt="help" />
+          <a routerLink="/login">Login</a>
+        </li>
+        <li>
+          <img class="icon" src="../assets/help.svg" alt="help" />
+          <a routerLink="/help">Help</a>
+        </li>
+      </ul>
+    </div>
+  </mat-drawer>
+
+  <div class="sideNav-toggler-btn">
+    <button mat-mini-fab id="btn-nav" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- <button mat-mini-fab color="info" ><mat-icon>add</mat-icon></button> -->
+  </div>
+  <div class="cloud-container container-fluid">
+    <img id="color-cloud" src="../assets/sm-cloud.svg" alt="colorful cloud" />
+    <img
+      id="worker"
+      src="../assets/worker.png"
+      class="img-fluid"
+      alt="a team of workers"
+    />
+  </div>
+</mat-drawer-container>
